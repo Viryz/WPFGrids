@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <UniformGrid Grid.Row="0">
+            <TextBlock Background="Blue" Margin="3"></TextBlock>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="0" Columns="3">
+            <TextBlock Background="Green" Margin="6"></TextBlock>
+            <TextBlock Background="Green" Margin="6"></TextBlock>
+            <TextBlock Background="Green" Margin="6"></TextBlock>
+        </UniformGrid>
+
+        <UniformGrid Grid.Row="1" Columns="2">
+            <TextBlock Background="Red" Margin="3,3,86,3"></TextBlock>
+            <UniformGrid Rows="3" Margin="-81,5,5,5" Background="Blue">
+                <TextBlock Background="Red" Margin="3,3,3,3"></TextBlock>
+                <TextBlock Background="Red" Margin="3,3,3,3"></TextBlock>
+                <TextBlock Background="Red" Margin="3,3,3,3"></TextBlock>
+            </UniformGrid>
+        </UniformGrid>
+        <UniformGrid Grid.Row="2" Columns="2" Background="Blue" Margin="3">
+            <UniformGrid Rows="2">
+                <UniformGrid Columns="2">
+                    <TextBlock Background="Green" Margin="3,3,3,3"></TextBlock>
+                    <TextBlock Background="Green" Margin="3,3,3,3"></TextBlock>
+                </UniformGrid>
+                <TextBlock Background="Red" Margin="3,3,3,3"></TextBlock>
+            </UniformGrid>
+            <TextBlock Background="Green" Margin="3,3,3,3"></TextBlock>
+        </UniformGrid>
+    </Grid>
+
+
+
+</Window>
